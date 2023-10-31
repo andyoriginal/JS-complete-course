@@ -91,7 +91,7 @@ let BMIMark = massMark / (heightMark * heightMark);
 let BMIJohn = massJohn / (heightJohn * heightJohn);
 
 console.log(BMIMark, BMIJohn);
-*/
+
 
 const firstName = 'Jonas';
 const job = 'teacher';
@@ -108,7 +108,27 @@ console.log(jonasNew);
 console.log(`String
 multiple
 lines`)
+*/
 
+const age = 15;
+
+if (age >= 18) {
+    console.log('Jonas can start driving')
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`You are too young, waint another ${yearsLeft} years`);
+}
+
+const birthYear = 1998;
+
+let century;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+
+console.log(century);
 
 
 
