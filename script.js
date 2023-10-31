@@ -40,7 +40,7 @@ age = 36;
 
 const birthyear = 1987;
 
-const job; 
+const job;
 
 //math operators
 const CY = 2037;
@@ -56,10 +56,10 @@ console.log(firstName + " " + lastName);
 
 //assignment operators
 let x = 10 + 5; //15
-x += 10; // += means x = x + 10 
+x += 10; // += means x = x + 10
 x *= 4; // x = x * 4 = 100
-x++; // x = x + 1 
-x--; // x = x -1 
+x++; // x = x + 1
+x--; // x = x -1
 
 console.log(x);
 
@@ -73,7 +73,7 @@ const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
 
-console.log(now - 1991 > now - 2018); // order of operators 
+console.log(now - 1991 > now - 2018); // order of operators
 
 console.log(25 - 10 - 5);
 
@@ -108,7 +108,7 @@ console.log(jonasNew);
 console.log(`String
 multiple
 lines`)
-*/
+
 
 const age = 15;
 
@@ -130,6 +130,46 @@ if (birthYear <= 2000) {
 
 console.log(century);
 
+
+const inputYear = '1991';
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23));
+
+//type coercion
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' * '2');
+
+let n = '1' + 1; // makes 11
+n = n - 1; // 11 -1 = 10
+console.log(n);
+*/
+
+// 5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+console.log(Boolean({}));
+
+const money = 0;
+if (money) {
+    console.log("Don't spend it all");
+} else {
+    console.log('You should get a job');
+}
+
+let height;
+if (height) {
+    console.log('Yay, Height is defined');
+} else {
+    console.log("Height is UNDEFINED");
+}
 
 
 
