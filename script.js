@@ -148,7 +148,7 @@ console.log('23' * '2');
 let n = '1' + 1; // makes 11
 n = n - 1; // 11 -1 = 10
 console.log(n);
-*/
+
 
 // 5 falsy values: 0, '', undefined, null, NaN
 
@@ -169,6 +169,50 @@ if (height) {
     console.log('Yay, Height is defined');
 } else {
     console.log("Height is UNDEFINED");
+}
+
+
+const age = '18';
+if (age === 18) console.log('You just became an adult (strict)'); // strict operator is better
+
+if (age == 18) console.log('You just became an adult (loose)'); // avoid using this operator
+
+const favourite = Number(prompt("What's your favorite number?")); //number prompt to convert string into number 
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) { //always try to use === operator // 22 === 23 -> FALSE 
+    console.log("This is the best number");
+} else if (favourite === 7) {
+    console.log('This is also a good number!')
+} else {
+    console.log('Number is not 23 or 7');
+}
+
+*/
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//     console.log('They are able to dive');
+// } else {
+//     console.log('Somebody else should drive');
+// }
+
+const isTired = false; // C 
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('They are able to drive');
+} else {
+    console.log('Somebody else should drive');
 }
 
 
