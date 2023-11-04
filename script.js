@@ -214,22 +214,21 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
     console.log('Somebody else should drive');
 }
-*/
 
-// const scoreDolphins = (96 + 108 + 89) / 3;
-// const scoreKoalas = (88 + 91 + 110) / 3;
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
 
-// console.log(scoreDolphins, scoreKoalas);
+console.log(scoreDolphins, scoreKoalas);
 
-// if (scoreDolphins > scoreKoalas) {
-//     console.log("Dolphins win the trophy!");
-// } else if (scoreKoalas > scoreDolphins) {
-//     console.log("Koalas win the trophy!");
-// } else if (scoreDolphins === scoreKoalas) {
-//     console.log("Both win the trophy");
-// } else {
-//     console.log("Nobody wins the trophy")
-// }
+if (scoreDolphins > scoreKoalas) {
+    console.log("Dolphins win the trophy!");
+} else if (scoreKoalas > scoreDolphins) {
+    console.log("Koalas win the trophy!");
+} else if (scoreDolphins === scoreKoalas) {
+    console.log("Both win the trophy");
+} else {
+    console.log("Nobody wins the trophy")
+}
 
 const scoreDolphins = (97 + 112 + 102) / 3;
 const scoreKoalas = (109 + 95 + 83) / 3;
@@ -245,8 +244,32 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 } else {
     console.log("Nobody wins the trophy")
 }
+*/
 
+const day = prompt('What day is it?');
 
+switch (day) {
+    case 'monday': //day === monday 
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break;
+    case 'tuesday':
+        console.log('prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('write code examples');
+        break;
+    case 'friday':
+        console.log('record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('enjoy the weekend');
+        break;
+    default:
+        console.log('Not a valid day!');
+}
 
-
+3 + 4 // this is an expression 
 
