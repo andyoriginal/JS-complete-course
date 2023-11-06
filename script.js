@@ -281,7 +281,7 @@ if (23 > 10) {
 
 const me = 'Jonas';
 console.log(`I'm ${2037 - 1991} years old ${me}`)
-*/
+
 
 const age = 23;
 // age >= 18 ? console.log('I like to drink wine') :
@@ -298,4 +298,20 @@ if (age >= 18) {
 }
 
 console.log(drink2);
+*/
+
+const bill = 275;
+
+const tip = bill >= 50 && bill <= 300 ? .15 * bill : .2 * bill;
+
+// if (bill > 50 < 300) {
+//     tip = .15 * bill
+// } else {
+//     tip = .20 * bill
+// }
+
+
+const total = bill + tip;
+
+console.log(`The bill total = ${bill}, the tip = ${tip}, the total = ${total}`);
 
